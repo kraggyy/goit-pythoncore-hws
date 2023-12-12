@@ -5,10 +5,6 @@ import pickle
 
 
 class Field:
-    def __init__(self, value):
-        self.value = value
-        self.__value = None
-
     def __str__(self):
         return str(self.value)
 
@@ -51,9 +47,6 @@ class Birthday(Field):
 
 
 class Phone(Field):
-    def __init__(self, value) -> None:
-        self.__value = None
-        super().__init__(value)
 
     @property
     def value(self):
